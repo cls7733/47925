@@ -9,6 +9,13 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <!-- modernizr enables HTML5 elements and feature detects -->
   <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+  <!-- tabbed panel css sheet -->
+  <link href="./SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
+  <!-- javascript for tabbed panels -->
+	<script src="./SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
+	<!-- javascript and css for lightbox -->
+<link rel="stylesheet" href="lightbox/lightbox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="lightbox/lightbox.js"></script>
 </head>
 
 <body>
@@ -16,16 +23,16 @@
     <header>
       <div>
         <div>
-            <h1><a href="index.html"><img src="images/newlogo.png" alt="Karate Logo" width="100%" height="100%"></a></h1>          
+            <h1><a href="index.html"><img src="images/newlogo.png" alt="Karate Logo" width="100%" height="100%"></a></h1> <!-- logo -->         
         </div>
       </div>
-      <nav>
-        <div id="menu_container">
+      <nav> <!-- start nav bar -->
+        <div id="menu_container"> <!-- start main container for whole site layout do not modify or it will mess up layout --> 
           <ul class="sf-menu" id="nav">
             <li><a href="index.html">Home</a></li>
-            <li><a href="dojo_news.html">Dojo News</a>
+            <li><a href="schedule.html">Schedule</a>
               <ul>
-                <li><a href="#">Schedule</a></li>
+                <li><a href="dojo_news.html">Dojo News</a></li>
               </ul>
             </li>
             <li><a href="prices.html">Prices</a></li>
@@ -41,7 +48,7 @@
 			<li><a href="#">Terminology</a></li>
           </ul>
         </div>
-      </nav>
+      </nav> <!--end nav bar -->
     </header>
     <div id="site_content">
       <div id="sidebar_container">
@@ -62,24 +69,80 @@
           </ul>
         </div>
       </div>
+	  <!-- start content div -->
       <div class="content">
         <h1>Dojo News</h1>
-		<p>News About Activities goes here</p>
+		<!-- start current events tab only change the paragraph tags by adding more <p></p> or adding content to the TBA images can be changed if size is width 277 and height 345 do not change width and height of tabbed panels-->
+	<div id="TabbedPanels1" class="TabbedPanels">
+    <ul class="TabbedPanelsTabGroup">
+      <li class="TabbedPanelsTab" tabindex="0">Current Events</li>
+      <li class="TabbedPanelsTab" tabindex="0">Upcoming Events</li>
+      <li class="TabbedPanelsTab" tabindex="0">Past Events</li>
+
+</ul>
+    <div class="TabbedPanelsContentGroup">
+      <div class="TabbedPanelsContent"><img src="images/photo3.jpg" alt="karate logo" width="277" height="345" class="floatimage" />
+			<p>TBA</p>
+			<p>TBA</p>
+			<p>TBA</p>
       </div>
-    </div>
+      <div class="TabbedPanelsContent"><img src="images/photo6.jpg" alt="karate patch" width="277" height="345" class="floatimage" />
+				<p>KARATE-PIZZA-FUN! COMING AGAIN SOON WATCH FOR THE DATE</p>
+				<p>TBA</p>
+				<p>TBA</p>
+				<p>TBA</p>
+      </div>
+      <div class="TabbedPanelsContent"><img src="images/photo29.jpg" alt="karate instructors" width="277" height="345" class="floatimage" />
+				<p>We Need Help for the SEPTEMBER Shiai is there any one Wanting to HELP?</p>
+				<p>Look for a NEW page being compiled called "Who's Who in Palm Springs Isshinryu" I expect to have it completed by SEPTEMBER  2013</p>
+				<p>Thank you to the parents, students, friends and instructors for helping make our pizza party a success,  and aspecial day in our Dojo</p>
+				<p>TBA</p>
+      </div>
+</div>	
+ </div>
+ 
+ 
+ <div><!-- start of lightbox only change picture source for photo# and photo#_thumb. All images must be placed in lightbox image folder for photo gallery only -->
+	<a href="lightbox/photo7.jpg" rel="lightbox" ><img src="lightbox/photo7_thumb.jpg" /></a>
+	<a href="lightbox/photo17.jpg" rel="lightbox" ><img src="lightbox/photo17_thumb.jpg" /></a>
+	<a href="lightbox/photo16.jpg" rel="lightbox" ><img src="lightbox/photo16_thumb.jpg" /></a>
+	<a href="lightbox/photo18.jpg" rel="lightbox" ><img src="lightbox/photo18_thumb.jpg" /></a>
+	<a href="lightbox/photo13.jpg" rel="lightbox" ><img src="lightbox/photo13_thumb.jpg" /></a>
+	<a href="lightbox/photo14.jpg" rel="lightbox" ><img src="lightbox/photo14_thumb.jpg" /></a>
+	<a href="lightbox/photo20.jpg" rel="lightbox" ><img src="lightbox/photo20_thumb.jpg" /></a>
+	<a href="lightbox/photo22.jpg" rel="lightbox" ><img src="lightbox/photo22_thumb.jpg" /></a>
+	<a href="lightbox/photo25.jpg" rel="lightbox" ><img src="lightbox/photo25_thumb.jpg" /></a>
+	<a href="lightbox/photo27.jpg" rel="lightbox" ><img src="lightbox/photo27_thumb.jpg" /></a>
+	<a href="lightbox/photo1.jpg" rel="lightbox" ><img src="lightbox/photo1_thumb.jpg" /></a>
+	<a href="lightbox/photo10.jpg" rel="lightbox" ><img src="lightbox/photo10_thumb.jpg" /></a>
+	<a href="lightbox/photo11.jpg" rel="lightbox" ><img src="lightbox/photo11_thumb.jpg" /></a>
+	<a href="lightbox/photo12.jpg" rel="lightbox" ><img src="lightbox/photo12_thumb.jpg" /></a>
+	<a href="lightbox/photo4.jpg" rel="lightbox" ><img src="lightbox/photo4_thumb.jpg" /></a>
+	<a href="lightbox/photo5.jpg" rel="lightbox" ><img src="lightbox/photo5_thumb.jpg" /></a>
+	<a href="lightbox/photo8.jpg" rel="lightbox" ><img src="lightbox/photo8_thumb.jpg" /></a>
+	<a href="lightbox/photo9.jpg" rel="lightbox" ><img src="lightbox/photo9_thumb.jpg" /></a>
+	
+	
+</div><!-- end lightbox photos -->
+ </div><!-- end of content div -->
+ </div>
     <footer>
       <p>Copyright &copy; 
     </footer>
-  </div>
+  </div><!-- end main container for whole site layout do not modify or it will mess up layout --> 
   <p>&nbsp;</p>
   <!-- javascript at the bottom for fast page loading -->
+ 
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
   <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
-  <script type="text/javascript">
+    <script type="text/javascript">
     $(document).ready(function() {
       $('ul.sf-menu').sooperfish();
     });
   </script>
+  <script type="text/javascript">
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+</script>
 </body>
 </html>

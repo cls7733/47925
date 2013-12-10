@@ -395,18 +395,10 @@ table {
 }
 
 table tr th, table tr td { 
-  background: #70D4E6;
-  color: #FFF;
   padding: 7px 4px;
   text-align: left;
 }
   
-table tr td { 
-  background: #D3F2F7;
-  color: #47433F;
-  border-top: 1px solid #FFF;
-}
-
 
 
 
