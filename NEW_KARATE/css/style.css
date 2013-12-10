@@ -149,7 +149,47 @@ header {
   background: transparent;
   height: 225px;
 }
+table { 
+  margin: 10px 0 15px 0;
+}
 
+table tr th, table tr td { 
+  padding: 7px 5px;
+  text-align: left;
+}
+#schedule {
+	background: #CC6600;
+	color: #ffffff;
+	font-family: "Palatino Linotype", "Book Antiqua", serif;
+	text-align: center;
+}
+.weekday {
+	
+	color: #FFFF00;
+	text-align: center;
+}
+.noday {
+	background: url(images/belt_image.jpg) no-repeat left;
+}
+.time {
+	color: #ffffff;
+}
+.event {
+	color: #FF0000;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+table#calendar { 
+	width: 105%;             /* change this table width as needed  */
+	margin-left: auto;      /* auto left and right margins centers the table since it has a width */
+	margin-right: auto;   
+}
+
+table#calendar td { 
+	height:  .12em;  /*  change this height for the calendar days as needed */
+	width: 14%;       /*  Since there are 7 days a week, 7 * 14% = 98%, so either leave this alone, or tweak only slightly  */
+}
 /*#logo { 
   width: 330px;
   float: left;
@@ -210,15 +250,17 @@ nav {
 
 #sidebar_container { 
   float: right;
-  width: 224px;
-  padding: 20px 5px 0 0;
+  width: 196px;
+  padding: 20px 2px 0 0;
+  
 }
 
 .sidebar { 
   float: right;
-  width: 200px;
+  width: 150px;
   margin: 0 0 17px 0;
   padding: 0 15px 5px 13px;
+  border: solid;
 }
   
 .sidebar h3, .content h1 { 
@@ -257,13 +299,7 @@ nav {
   padding: 15px 0;
 }
 
-.paperclip { 
-  float: left;
-  position: relative; 
-  z-index: 0;
-  vertical-align: middle; 
-  margin: -15px 0 -60px -40px;
-}
+
 
 .content { 
   text-align: left;
@@ -390,14 +426,7 @@ footer a:hover {
   margin: 0 0 20px 0;
 }
   
-table { 
-  margin: 10px 0 30px 0;
-}
 
-table tr th, table tr td { 
-  padding: 7px 4px;
-  text-align: left;
-}
   
 
 
@@ -500,7 +529,7 @@ ul ul span.sf-arrow {
 
 /* Theming the menu */
 ul#nav { 
-  float: right;
+  float: left;
 }
 
 ul#nav ul { 
