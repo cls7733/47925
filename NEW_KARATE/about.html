@@ -9,38 +9,9 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <!-- modernizr enables HTML5 elements and feature detects -->
   <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
-  
-  <script type="text/javascript">
-			//Split form info at the URL.
-			function getFormInfo(url){
-				//split info at the "?"
-				var info=url.split("?");//creates 'info' array
-				//split the name value pairs at the second part of the 'info' array
-				var nameValuePairs=info[1].split("&");
-				//map info for object
-				var obj=new Object();
-				for(var i=0;i<nameValuePairs.length-1;i++){
-					var map=nameValuePairs[i].split("=");
-					name=map[0];
-					value=map[1];
-					obj[name]=value.replace("%40","@");	//replaces '%40' with '@'
-				}
-				return obj;
-			}
-			
-			//Set the cookie.
-			function setCookie(name, value, secondsToLive) {
-				var cookie = name + "=" + encodeURIComponent(value);
-				if (typeof daysToLive === "number") 
-					cookie += "; max-age=" + (daysToLive);
-				document.cookie = cookie;
-			}
-						
-		</script>
 </head>
 
 <body>
-
   <div id="main">
     <header>
       <div>
@@ -77,7 +48,7 @@
       <div id="sidebar_container">
         <div class="sidebar">
           <h3>Latest News</h3>
-          <h4>New Website Launched</h4>
+<h4>New Website Launched</h4>
           <h5>December 2013</h5>
           <p>2013 Click on the link to see out what's going on at the dojo this week and things you might have missed<br /><a href="dojo_news.html">Read more</a></p>
         </div>
@@ -91,39 +62,29 @@
         </div>
       </div>
       <div class="content">
-        <h1 >Your information has been submitted!</h1>
+        <h1>About Us</h1>
 				<div>
-					<img src="./images/karate_rhino.gif" alt="Karate Rhino" width="233" height="232" id="rhino">
-					
-					
-			<script type="text/javascript">
-				var $_GET=getFormInfo(location.href);
-				var str = JSON.stringify($_GET);
-				var obj = JSON.parse(str);
-				
-				for(var name in obj){
-					document.write('<p>'+name+': '+obj[name].replace(/\+/g,' ')+'</p><br/>');	
-				}
-				
-				
-				var fnameProp = obj["First Name"];
-				var lnameProp = obj["Last Name"];
-				var cookieName = (fnameProp+"-"+lnameProp+"-CONTACT");
-				var days = 50;
-				var ttl = days*60*60*24;
-				
-				setCookie(cookieName, str, ttl);
-
-			</script>
-			
-			</div>
+					<img src="./images/belt_image.png" alt="Belt" width="233" height="232" id="rhino">
+					<p>For those of you that don't know "US" here is a brief description of our Dojo we are located at<br />
+						68225 Ramon Road at Whispering Palms Cathedral City<br />
+						760-568 0961 CALL NOW!<br />
+						 We are at the intersection of Ramon Road and Whispering Palms.
+We  have enough room to do Sparring and Self Defense in 5 FULL SIZED PERMANENT RINGS, Kata and Weapons comfortably with mirrors, We also have 6 hanging bags, RUBBER FLOORS, a room for consultation and counseling, as well as a room with about a 12 inch thick foam floor for beginners to learn to fall properly without fear of hurting themselves, storage space for our required supplies. As well as seperate Men's and Women's rest rooms with  Lockers. We also have a Knife Throwing, and Zen Archery Range.
+I hope that the following Pages that pertain to our Dojo will give you Pleasure and a few things to Think about Perhaps, just Perhaps, you can also learn something.... 
+Created for you... for your enjoyment... and mine as well....
+Please notice Contributions by our 
+Dojo Family 
+on 
+Thoughts, Point of View, and Cowmentary .
+Sensei Arnold R Sandubrae</p>
+				</div>
       </div>
     </div>
     <footer>
       <p>Copyright &copy; 
     </footer>
   </div>
-  
+  <p>&nbsp;</p>
   <!-- javascript at the bottom for fast page loading -->
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
