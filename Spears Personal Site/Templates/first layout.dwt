@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>ChaMarie Spears Final Project</title>
+<!-- TemplateEndEditable -->
+<link href="../main.css" rel="stylesheet" type="text/css" />
+<link href="../SpryAssets/SpryAccordion.css" rel="stylesheet" type="text/css" />
+<script src="../SpryAssets/SpryAccordion.js" type="text/javascript"></script>
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+
+
+<div class="container">
+<div id="header"><img src="../lionofjudahlogo.jpg" alt="lionlogo" name="apDiv1" width="150" id="apDiv1" /></div>
+<!-- TemplateBeginEditable name="navbar" -->
+<div class="navbar">
+  <ul class="nav">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Products</a></li>
+    <li><a href="#">Featured Artist</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Feedback</a></li>
+  </ul>
+  <img src="../marleysidebar.jpg" alt="bobmarleypic" />
+  <!-- end .sidebar1 -->
+</div>
+<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="maincontect" -->
+<div class="content">
+  <h1>Instructions</h1>
+  <p>Be aware that the CSS for these layouts is heavily commented. If you do most of your work in Design view, have a peek at the code to get tips on working with the CSS for the fixed layouts. You can remove these comments before you launch your site. To learn more about the techniques used in these CSS Layouts, read this article at Adobe's Developer Center- <a href="http://www.adobe.com/go/adc_css_layouts">http://www.adobe.com/go/adc_css_layouts</a>.</p>
+  <h2>Clearing Method</h2>
+  <p>Because all the columns are floated, this layout uses a clear:both declaration in the .footer rule. This clearing technique forces the .container to understand where the columns end in order to show any borders or background colors you place on the .container. If your design requires you to remove the .footer from the .container, you'll need to use a different clearing method. The most reliable will be to add a &lt;br class=&quot;clearfloat&quot; /&gt; or &lt;div  class=&quot;clearfloat&quot;&gt;&lt;/div&gt; after your final floated column (but before the .container closes). This will have the same clearing effect.</p>
+  <h3>Logo Replacement</h3>
+  <p>An image placeholder was used in this layout in the .header where you'll likely want to place  a logo. It is recommended that you remove the placeholder and replace it with your own linked logo. </p>
+  <p> Be aware that if you use the Property inspector to navigate to your logo image using the SRC field (instead of removing and replacing the placeholder), you should remove the inline background and display properties. These inline styles are only used to make the logo placeholder show up in browsers for demonstration purposes. </p>
+  <p>To remove the inline styles, make sure your CSS Styles panel is set to Current. Select the image, and in the Properties pane of the CSS Styles panel, right click and delete the display and background properties. (Of course, you can always go directly into the code and delete the inline styles from the image or placeholder there.)</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <!-- end .content -->
+</div>
+<!-- TemplateEndEditable -->
+<div class="sidebar">
+    <h5>Cool Vibes</h5>
+    <p id="sidebarp">Check out our Weekly Specials, Vibes Reading and Weekly Events</p>
+    <br />
+    <div id="Accordion1" class="Accordion" tabindex="0">
+      <div class="AccordionPanel">
+        <div class="AccordionPanelTab">Events</div>
+        <div class="AccordionPanelContent">
+          <h3>Rasta Vibes Night</h3>
+          <p>Join DJ Fire on Thurs. &amp; Fri. to groove with smooth reggea beats.</p>
+          <p>Women FREE before 12am</p>
+          <p>Drinks: $4 before 12am</p>
+          
+          
+        </div>
+      </div>
+      <div class="AccordionPanel">
+        <div class="AccordionPanelTab">Sales</div>
+        <div class="AccordionPanelContent">
+          <h3>Discouts</h3>
+          <p>35% off sale on all purchases $50 or more.</p>
+          <h5>Ristrictions Apply</h5>
+        </div>
+      </div>
+      <div class="AccordionPanel">
+        <div class="AccordionPanelTab">Magazines</div>
+        <div class="AccordionPanelContent">
+        	<h3>Vibes Reading</h3>
+                 <p><a href="http://www.oneworldmagazine.org/focus/etiopia/rasta.html">One World</a></p>
+                 <p><a href="http://www.jusjahmagazine.com/">Jah Magazine</a></p>
+                 <p><a href="http://www.bobmarleymagazine.com/">Bob Marley Magazine</a></p>
+        </div>
+      </div>
+</div><br />
+ 	<img src="../sidebarimage.jpg" alt="lion of juda" />
+    <!-- end .sidebar2 --></div>
+
+<div class="copyright">
+  <p class="copyright">Copyright 2013 All Rights Reserved by ChaMarie's Rasta Vibes</p>
+  <!-- end .footer -->
+</div>
+<!-- end .container --></div>
+<script type="text/javascript">
+var Accordion1 = new Spry.Widget.Accordion("Accordion1");
+</script>
+</body>
+</html>

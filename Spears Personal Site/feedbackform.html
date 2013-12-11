@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/first layout.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>ChaMarie Spears Final Project</title>
+<link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryValidationRadio.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryValidationTextarea.css" rel="stylesheet" type="text/css" />
+<!-- InstanceEndEditable -->
+<link href="main.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryAccordion.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryAccordion.js" type="text/javascript"></script>
+<!-- InstanceBeginEditable name="head" -->
+<script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryValidationRadio.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryValidationTextarea.js" type="text/javascript"></script>
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+
+
+<div class="container">
+<div id="header"><img src="lionofjudahlogo.jpg" alt="lionlogo" name="apDiv1" width="150" id="apDiv1" /></div>
+<!-- InstanceBeginEditable name="navbar" -->
+<div class="navbar">
+  <ul class="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="featured_artist.html">Featured Artist</a></li>
+    <li><a href="aboutus.html">About Us</a></li>
+    <li>Feedback</li>
+  </ul>
+  <img src="marleysidebar.jpg" alt="bobmarleypic" />
+  <!-- end .sidebar1 -->
+</div>
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="maincontect" -->
+<div class="content">
+  <h1>Feedback</h1>
+  <p>&nbsp;</p>
+  <p><img src="bob-marley-jamaican-flag.jpg" alt="bob marley" width="231" height="257" class="floatimage" />Please take a moment to fill out this form and tell us what you think of our site. Let us know what conetent you would like to see more of or any other information you would like to give. Also tell us what you think about our products. If you know of any upcoming events, great travel destinations, good reading material or artist you would like for us to feature on this site be sure to include that information as well. Thank you for you response and time. </p>
+  <p>&nbsp;</p>
+  <form action="feedback_response.html" method="get" enctype="application/x-www-form-urlencoded" name="Feedback" id="Feedback">
+    <p>Name: <span id="sprytextfield1">
+      <input name="Name" type="text" id="Name" size="50" maxlength="33" />
+      <span class="textfieldRequiredMsg">A value is required.</span></span></p>
+    <p>Address: 
+      <input name="address" type="text" id="address" size="50" maxlength="50" />
+    </p>
+    <p>City/State/Zip: 
+      <input name="city/state/zip" type="text" id="city/state/zip" size="50" maxlength="50" />
+    </p>
+    <p>E-mail: <span id="sprytextfield2">
+    <input name="E-mail" type="text" id="E-mail" size="50" maxlength="50" />
+    <span class="textfieldRequiredMsg">A value is required.</span><span class="textfieldInvalidFormatMsg">Invalid format.</span></span></p>
+    <p>Would you recommend this site to a friend?</p>
+    <p>Yes
+      <label>
+        <input name="Yes" type="checkbox" id="Yes" value="liked" />
+      </label>
+No
+<label>
+  <input name="No" type="checkbox" id="No" value="disliked" />
+</label>
+    </p>
+    <p>My feedback is about (Please select an item/s)</p>
+    <p><span id="spryradio1">
+      <label>
+        <input type="radio" name="RadioGroup1" value="Website" id="RadioGroup1_0" />
+        Website</label>
+      <br />
+      <label>
+        <input type="radio" name="RadioGroup1" value="Products" id="RadioGroup1_1" />
+        Products</label>
+      <br />
+      <label>
+        <input type="radio" name="RadioGroup1" value="Events" id="RadioGroup1_2" />
+        Events</label>
+      <br />
+      <label>
+        <input type="radio" name="RadioGroup1" value="Travel Destinations" id="RadioGroup1_3" />
+        Travel Destinations</label>
+      <br />
+      <label>
+        <input type="radio" name="RadioGroup1" value="Artist Selection" id="RadioGroup1_4" />
+        Artist Seletion</label>
+      <br />
+      <span class="radioRequiredMsg">Please make a selection.</span></span></p>
+    <p>What products do you purchase the most?</p>
+    <p>
+      <select name="Products" size="4" multiple="multiple" id="Products">
+        <option value="Apparel">Apparel</option>
+        <option value="Accessories">Accessories</option>
+        <option value="Flags">Flags</option>
+        <option value="Pins">Pins</option>
+        <option value="Poster">Posters</option>
+        <option value="Shoes">Shoes</option>
+        <option value="Bags">Bags</option>
+        <option value="Travel">Travel</option>
+      </select>
+    </p>
+    <p>Any comments on products/website or any information:</p>
+    <p><span id="sprytextarea1">
+    <textarea name="Comments" id="Comments" cols="45" rows="5"></textarea>
+    <span id="countsprytextarea1">&nbsp;</span><span class="textareaRequiredMsg">A value is required.</span><span class="textareaMinCharsMsg">Minimum number of characters not met.</span><span class="textareaMaxCharsMsg">Exceeded maximum number of characters.</span></span></p>
+    <p>
+      <input name="Submit" type="submit" id="submit" value="Send" />
+      <input type="reset" name="Reset" id="Reset" value="Clear" />
+      </p>
+    </form>
+  <!-- end .content -->
+</div>
+<script type="text/javascript">
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1", "none", {validateOn:["blur", "change"]});
+var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2", "email", {validateOn:["blur", "change"]});
+var spryradio1 = new Spry.Widget.ValidationRadio("spryradio1", {validateOn:["blur"]});
+var sprytextarea1 = new Spry.Widget.ValidationTextarea("sprytextarea1", {counterType:"chars_count", counterId:"countsprytextarea1", minChars:2, maxChars:150, useCharacterMasking:false, validateOn:["change"]});
+</script>
+<!-- InstanceEndEditable -->
+<div class="sidebar">
+    <h5>Cool Vibes</h5>
+    <p id="sidebarp">Check out our Weekly Specials, Vibes Reading and Weekly Events</p>
+    <br />
+    <div id="Accordion1" class="Accordion" tabindex="0">
+      <div class="AccordionPanel">
+        <div class="AccordionPanelTab">Events</div>
+        <div class="AccordionPanelContent">
+          <h3>Rasta Vibes Night</h3>
+          <p>Join DJ Fire on Thurs. &amp; Fri. to groove with smooth reggea beats.</p>
+          <p>Women FREE before 12am</p>
+          <p>Drinks: $4 before 12am</p>
+          
+          
+        </div>
+      </div>
+      <div class="AccordionPanel">
+        <div class="AccordionPanelTab">Sales</div>
+        <div class="AccordionPanelContent">
+          <h3>Discouts</h3>
+          <p>35% off sale on all purchases $50 or more.</p>
+          <h5>Ristrictions Apply</h5>
+        </div>
+      </div>
+      <div class="AccordionPanel">
+        <div class="AccordionPanelTab">Magazines</div>
+        <div class="AccordionPanelContent">
+        	<h3>Vibes Reading</h3>
+                 <p><a href="http://www.oneworldmagazine.org/focus/etiopia/rasta.html">One World</a></p>
+                 <p><a href="http://www.jusjahmagazine.com/">Jah Magazine</a></p>
+                 <p><a href="http://www.bobmarleymagazine.com/">Bob Marley Magazine</a></p>
+        </div>
+      </div>
+</div><br />
+ 	<img src="sidebarimage.jpg" alt="lion of juda" />
+    <!-- end .sidebar2 --></div>
+
+<div class="copyright">
+  <p class="copyright">Copyright 2013 All Rights Reserved by ChaMarie's Rasta Vibes</p>
+  <!-- end .footer -->
+</div>
+<!-- end .container --></div>
+<script type="text/javascript">
+var Accordion1 = new Spry.Widget.Accordion("Accordion1");
+</script>
+</body>
+<!-- InstanceEnd --></html>
