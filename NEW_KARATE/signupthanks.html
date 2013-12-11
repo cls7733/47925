@@ -9,9 +9,38 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <!-- modernizr enables HTML5 elements and feature detects -->
   <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+  
+  <script type="text/javascript">
+			//Split form info at the URL.
+			function getFormInfo(url){
+				//split info at the "?"
+				var info=url.split("?");//creates 'info' array
+				//split the name value pairs at the second part of the 'info' array
+				var nameValuePairs=info[1].split("&");
+				//map info for object
+				var obj=new Object();
+				for(var i=0;i<nameValuePairs.length-1;i++){
+					var map=nameValuePairs[i].split("=");
+					name=map[0];
+					value=map[1];
+					obj[name]=value.replace("%40","@");	//replaces '%40' with '@'
+				}
+				return obj;
+			}
+			
+			//Set the cookie.
+			function setCookie(name, value, secondsToLive) {
+				var cookie = name + "=" + encodeURIComponent(value);
+				if (typeof daysToLive === "number") 
+					cookie += "; max-age=" + (daysToLive);
+				document.cookie = cookie;
+			}
+						
+		</script>
 </head>
 
 <body>
+
   <div id="main">
     <header>
       <div>
@@ -64,25 +93,39 @@
         </div>
       </div>
       <div class="content">
-        <h1>Prices</h1>
-		<img src="./images/isshinryu.gif" alt="isshinryu characters" width="233" height="232" id="rhino">
-        <p><font size="4">All lessons are</font> <font size="5" color="#FFCC66" font-weight="bold">$ 99.00 per Month</font></p>
-				<p>
-					Free Uniform Free<br />
-					Trial Class<br />
-					No Contracts<br />
-					Veterans 3 Months Free<br />
-					Ask about Special<br />
-					Family Rates
-				</p>
-		<p>If you are interested in <a href="sign_up.html">Sign Up</a> please fill out the form, visit our location or <a href="contact.html">Contact Us</a>.. We are looking forward to hearing from you.</p>
+        <h1 >Your information has been submitted!</h1>
+				<div>
+					<img src="./images/karate_rhino.gif" alt="Karate Rhino" width="233" height="232" id="rhino">
+					
+					
+			<script type="text/javascript">
+				var $_GET=getFormInfo(location.href);
+				var str = JSON.stringify($_GET);
+				var obj = JSON.parse(str);
+				
+				for(var name in obj){
+					document.write('<p>'+name+': '+obj[name].replace(/\+/g,' ')+'</p><br/>');	
+				}
+				
+				
+				var fnameProp = obj["First Name"];
+				var lnameProp = obj["Last Name"];
+				var cookieName = (fnameProp+"-"+lnameProp+"-CONTACT");
+				var days = 50;
+				var ttl = days*60*60*24;
+				
+				setCookie(cookieName, str, ttl);
+
+			</script>
+			
+			</div>
       </div>
     </div>
     <footer>
       <p>Copyright &copy; 
     </footer>
   </div>
-  <p>&nbsp;</p>
+  
   <!-- javascript at the bottom for fast page loading -->
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
